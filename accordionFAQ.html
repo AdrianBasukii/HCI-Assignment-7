@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="task.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>HCI Assignment 7</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="https://avatars.githubusercontent.com/u/142596941?v=4" alt="Logo" width="40" height="40" class="d-inline-block align-text-top rounded-circle">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <h1>Accordion FAQ</h1>
+    </header>
+
+    <section class="main" id="main">
+        <div class="section-title">
+            <h2>FAQ</h2>
+            <hr>
+        </div>
+        <div class="items">
+            <div class="FAQ">
+                <div class="question q1" style="background-color: #ce3925;"><h1>What is Human Computer Interaction?</h1></div>
+                <div class="answer a1"><p>Human-Computer Interaction (HCI) is a multidisciplinary field of study that focuses on the design and use of computer technology, particularly the interaction between humans (users) and computers. The goal of HCI is to create effective, efficient, and enjoyable interactions between users and computer systems.</p></div>
+            </div>
+            <div class="FAQ">
+                <div class="question q2" style="background-color: #9c9021;"><h1>What are some key aspects of Human Computer Interaction?</h1></div>
+                <div class="answer a2">
+                    <p>Key aspects of Human-Computer Interaction include:</p><br>
+
+                    <p>1. User-Centered Design (UCD): UCD is a design process that prioritizes the needs, preferences, and behaviors of the end users throughout the development of a system or product. It involves understanding the users' goals, tasks, and characteristics to create designs that are more intuitive and user-friendly.</p><br>
+
+                    <p>2. Usability: Usability is a measure of how well a user can interact with a system or product to achieve their goals efficiently and with satisfaction. HCI researchers and designers strive to improve usability through various methods, such as user testing, feedback analysis, and iterative design.</p><br>
+
+                    <p>3. User Experience (UX): UX encompasses the overall experience a user has while interacting with a system, including emotional and psychological aspects. It goes beyond usability to consider the user's perceptions, feelings, and satisfaction with the entire interaction.</p><br>
+
+                    <p>4. Interface Design: This involves creating the visual and interactive elements that users interact with on a computer or device. It includes the design of graphical user interfaces (GUIs), touchscreens, voice interfaces, and other means of interaction.</p><br>
+
+                    <p>5. Cognitive Psychology: Understanding how users perceive, process information, and make decisions is crucial in HCI. Cognitive psychology principles are often applied to design interfaces that align with users' mental models and cognitive processes.</p><br>
+
+                    <p>6. Accessibility: Ensuring that computer systems are accessible to people with disabilities is a significant concern in HCI. This involves designing interfaces and interactions that can be used by individuals with various abilities and disabilities.</p><br>
+
+                    <p>7. Information Architecture: Organizing and structuring information in a way that is logical and user-friendly is an essential aspect of HCI. Information architecture helps users find and navigate through information effectively.</p><br>
+                    
+                </div>
+            </div>
+            <div class="FAQ">
+                <div class="question q3" style="background-color: #0f754c;"><h1>Who created HTML?</h1></div>
+                <div class="answer a3"><p>HTML, or HyperText Markup Language, was not created by a single individual. Instead, it evolved through the collaborative efforts of multiple individuals and organizations. The development of HTML can be attributed to Tim Berners-Lee, a British computer scientist, and his colleagues at CERN (European Organization for Nuclear Research).</p><br>
+
+                    <p>Tim Berners-Lee is often credited as the primary inventor of the World Wide Web, and he proposed the concept of a hypertext system that eventually led to the development of HTML. The first version of HTML, HTML 2.0, was introduced in 1995. The evolution of HTML has continued with subsequent versions, each introducing new features and improvements.</p><br>
+                    
+                    <p>The World Wide Web Consortium (W3C) plays a significant role in the standardization and ongoing development of HTML. W3C is an international community that develops web standards to ensure the long-term growth and interoperability of the World Wide Web. The HTML Working Group within W3C oversees the development and maintenance of the HTML specification.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <script> 
+        $(document).ready(function(){
+          $(".q1").click(function(){
+            $(".a1").slideToggle("slow");
+          });
+          $(".q2").click(function(){
+            $(".a2").slideToggle("slow");
+          });
+          $(".q3").click(function(){
+            $(".a3").slideToggle("slow");
+          });
+        });
+    </script>
+</body>
+</html>

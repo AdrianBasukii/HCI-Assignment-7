@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="task.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>HCI Assignment 7</title>
+</head>
+<body style="background-color: white !important;">
+    <header style="background-image: url(https://static.vecteezy.com/system/resources/previews/008/286/612/original/minimal-background-with-organic-abstract-shapes-in-pastel-colors-beautiful-pastel-social-media-banner-template-vector.jpg); background-size: cover; ">
+        <nav class="navbar navbar-expand-lg navbar-custom" style="background-color: #4c4c75;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="https://avatars.githubusercontent.com/u/142596941?v=4" alt="Logo" width="40" height="40" class="d-inline-block align-text-top rounded-circle">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <h1 style="color: #c71f9a; font-size: 6rem;">Interactive Menu</h1>
+    </header>
+
+    <section class="main" id="main" style="background-color: white !important;">
+        <div class="section-title">
+            <h2 style="color: #272727 !important;">Menu</h2>
+            <h5 style="color: #272727 !important;"> Hover over menu area to reveal details </h5>
+            <hr style="border: 0.15em solid blue;">
+        </div>
+        <div class="items" style="gap: 6em;">
+            <div class="food 1">
+                <h1>Omurice</h1>
+                <div class="food-img food1"></div>
+                <div class="food-img food12"></div>
+                <p class="desc d1">Omurice is a popular Japanese dish that combines Western omelette-style cooking with Japanese fried rice.</p>
+                <h1>Rp. 45,000.00</h1>
+            </div>
+            <div class="food 2">
+                <h1>Omurice</h1>
+                <div class="food-img food2"></div>
+                <div class="food-img food22"></div>
+                <p class="desc d2">Potato Chip Fried Rice is a creative and flavorful twist on traditional fried rice, incorporating the crispy and salty goodness of potato chips into the dish.</p>
+                <h1>Rp. 65,000.00</h1>
+            </div>
+            <div class="food 3">
+                <h1>Omurice</h1>
+                <div class="food-img food3"></div>
+                <p class="desc d3">
+                    Pancakes are a classic and versatile breakfast dish enjoyed in various forms around the world. They are typically made from a simple batter consisting of flour, eggs, milk, and baking powder, though variations exist based on regional preferences.</p>
+                <h1>Rp. 50,000.00</h1>
+            </div>
+            <div class="food 4">
+                <h1>Omurice</h1>
+                <div class="food-img food4"></div>
+                <p class="desc d4">Ramen is a Japanese dish that has gained international popularity for its delicious and comforting appeal. It typically consists of Chinese-style wheat noodles served in a flavorful broth, accompanied by a variety of ingredients. </p>
+                <h1>Rp. 60,000.00</h1>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        $(".1").hover(function(){
+            $(".d1").slideToggle();
+            $(".food12").slideToggle();
+        });
+        
+        $(".2").hover(function(){
+            $(".d2").slideToggle();
+            $(".food22").slideToggle();
+        });
+
+        $(".3").hover(function(){
+            $(".d3").slideToggle();
+            $(".food32").slideToggle();
+        });
+
+        $(".4").hover(function(){
+            $(".d4").slideToggle();
+            $(".food42").slideToggle();
+        });
+    </script>
+</body>
+</html> 
