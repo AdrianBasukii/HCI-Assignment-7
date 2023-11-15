@@ -39,7 +39,7 @@
             <h2>Image Gallery</h2>
             <hr>
             <div class="buttons">
-              <button id="all">All</button>
+              <button id="all" class="activee">All</button>
               <button id="animal">Animals</button>
               <button id="anime">Anime</button>
               <button id="nature">Nature</button>
@@ -85,6 +85,12 @@
           $('.anime').hide();
           $('.nature').show();
         });
+
+        $("button").click(function(){
+        $("button").removeClass("activee"); 
+        $(this).addClass("activee");
+        });
+
       });
     </script>
 </body>

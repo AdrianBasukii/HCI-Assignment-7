@@ -12,11 +12,11 @@ button{
     border: 0.1em solid #333333;
     border-radius: 5em !important;
     color: #747474;
-    width: 5em;
+    width: 6em;
     transition: 0.3s    
 }
 
-button:hover{
+button:hover, .activee{
     color: #272727;
     background-color: #747474;
 }
@@ -190,4 +190,29 @@ button:hover{
     padding: 2%;
     display: none;
     font-size: 1.5em;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.par{
+    color: white;
+}
+
+.comment{
+    width: 100%;
+    aspect-ratio: 16/1;
+    background-color: #272727;
+    padding: 2.5rem;
+    padding-right: 30%;
+    border-radius: 1em;
+}
+
+.comment h2{
+    color: white;
+}
+
+.comment p{
+    color:white;
+    margin-left: 1.5%;
+    margin-top: 1%;
 }
