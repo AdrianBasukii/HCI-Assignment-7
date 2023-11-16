@@ -198,6 +198,9 @@ button:hover, .activee{
     color: white;
 }
 
+.comments{
+    display: none;
+}
 .comment{
     width: 100%;
     aspect-ratio: 16/1;
